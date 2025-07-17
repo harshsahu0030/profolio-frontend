@@ -8,11 +8,12 @@ const config = {
   },
 };
 
-const ser = "http://localhost:3000";
 export default function useApiCall() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  let server = "https://profolio-backend-zeta.vercel.app";
 
   const callApi = useCallback(async (url, method, form) => {
     setLoading(true);

@@ -16,7 +16,7 @@ const Experience = () => {
         </span>
       </div>
 
-      <div className="h-full w-full bg-c-dark p-5 grid md:grid-cols-2 gap-5 ">
+      <div className="h-full w-full bg-c-dark p-5 flex flex-col gap-5 ">
         {experienceData?.map((item) => (
           <Exp key={item.company} data={item} />
         ))}

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import useApiCall from "../hooks/useApiCall";
 import { toast } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { MdOutlineMessage } from "react-icons/md";
+import useApiCall from "../hooks/useApiCall";
 
 const Contact = () => {
   const { callApi, loading, error, data } = useApiCall();
@@ -14,8 +14,8 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    // callApi("/contact", "POST", data);
-    console.log(data);
+    callApi("/contact", "POST", data);
+    // console.log(data);
   };
 
   useEffect(() => {
@@ -34,7 +34,15 @@ const Contact = () => {
       className="h-full w-full grid md:grid-cols-2 gap-5 py-5"
     >
       {/* left  */}
-      <div className="h-full w-full p-4"></div>
+      <div className="h-full w-full p-4 flex justify-center items-center">
+        <img
+          src="/getintouch.jpg"
+          alt="getintouch-image"
+          height={400}
+          width={400}
+          className="object-contain rounded-4xl"
+        />
+      </div>
 
       {/* right  */}
       <form
@@ -91,6 +99,33 @@ const Contact = () => {
           )}
         </div>
 
+        <div className="flex flex-col gap-1">
+          <label
+            htmlFor="contact_number"
+            className="text-sm md:text-base font-medium"
+          >
+            Contact Number:* (WhatsApp/Phone)
+          </label>
+          <input
+            type="text"
+            id="contact_number"
+            className="bg-c-bolddark border border-c-semidark  rounded-lg focus:ring-c-blue focus:border-c-blue block w-full  outline-none p-4"
+            placeholder="Enter your contact number here"
+            {...register("contact", {
+              required: "Contact number is required",
+              pattern: {
+                value: /^[0-9]{10}$/,
+                message: "Enter a valid 10-digit phone number",
+              },
+            })}
+          />
+          {errors.contact && (
+            <span className="text-sm font-medium text-red-500">
+              {errors.contact.message}
+            </span>
+          )}
+        </div>
+
         {/* message  */}
         <div className="flex flex-col gap-1">
           <label htmlFor="message" className="text-sm md:text-base font-medium">
@@ -112,8 +147,9 @@ const Contact = () => {
         </div>
 
         <button
+          disabled={loading}
           type="submit"
-          className="text-base font-medium py-2 px-6 w-fit bg-accent rounded-lg hover:bg-accent/80 transition-all cursor-pointer"
+          className="text-base font-medium py-2 px-6 w-fit bg-accent rounded-lg hover:bg-accent/80 transition-all cursor-pointer disabled:cursor-not-allowed disabled:bg-accent/50"
         >
           Submit
         </button>

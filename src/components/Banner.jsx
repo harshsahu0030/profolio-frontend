@@ -21,14 +21,22 @@ const Banner = () => {
             other modern technologies to create seamless user experiences and
             efficient solutions.
           </p>
-          <button className="uppercase text-base font-semibold w-fit px-6 py-3 bg-accent rounded-full">
+          <button className="uppercase text-base font-semibold w-fit px-6 py-3 bg-accent rounded-full shadow-xl/20">
             Download CV
           </button>
         </div>
       </div>
 
       {/* right  */}
-      <div className="flex h-full flex-1 w-full bg-red-400">Hello</div>
+      <div className="flex h-full flex-1 w-full items-center justify-center">
+        <img
+          src="/profile-image.png"
+          alt="profile-image"
+          height={400}
+          width={400}
+          className="object-contain rounded-4xl"
+        />
+      </div>
     </section>
   );
 };

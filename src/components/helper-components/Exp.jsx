@@ -2,7 +2,7 @@ import React from "react";
 
 const Exp = ({ data }) => {
   return (
-    <div className="h-full w-full bg-surface p-5 flex flex-col gap-4 rounded-2xl">
+    <div className="h-full w-full bg-surface p-5 flex flex-col gap-4 rounded-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-accent">
       {/* top  */}
       <div>
         <h4 className="text-2xl font-semibold">{data?.role}</h4>

@@ -24,7 +24,7 @@ export const experienceData = [
     duration: "March 2025 - Present",
   },
   {
-    role: "Frontend Intern",
+    role: "Website Developer Intern",
     company: "Webneco Infotech",
     learn:
       "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, tailwind, react, wordpress and others. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
@@ -40,7 +40,7 @@ export const experienceData = [
       "Git",
       "Wordpress",
     ],
-    duration: "March 2024 - September 2024",
+    duration: "April 2024 - Octobar 2024",
   },
   {
     role: "CSA (Meesho)",

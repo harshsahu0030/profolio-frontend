@@ -19,7 +19,7 @@ const Skills = () => {
         {skillsData?.map((item) => (
           <div
             key={item.title}
-            className="flex flex-col gap-3 bg-surface rounded-4xl p-5"
+            className="flex flex-col gap-3 bg-surface rounded-4xl p-5 transition-all hover:scale-105 border-2 border-transparent hover:border-accent"
           >
             <h5 className="text-xl font-semibold">{item?.title}:</h5>
 

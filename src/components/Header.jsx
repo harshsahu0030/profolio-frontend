@@ -11,13 +11,15 @@ const Header = () => {
       className="h-full w-full flex items-center justify-between py-2 border-b-2 border-surface"
     >
       {/* left  */}
-      <img
-        src="/logo.png"
-        alt="profolio-logo"
-        height={100}
-        width={100}
-        className="h-full object-contain"
-      />
+      <a href="#banner" className="h-full">
+        <img
+          src="/logo.png"
+          alt="profolio-logo"
+          height={100}
+          width={100}
+          className="h-full object-contain"
+        />
+      </a>
 
       {/* right */}
       <button

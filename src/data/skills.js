@@ -37,6 +37,7 @@ export const skillsData = [
       "Git",
       "GitHub",
       "Figma",
+      "Hostinger",
       "Netlify",
       "Vercel",
       "Render",

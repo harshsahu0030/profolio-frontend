@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Project = ({ data, direction }) => {
   return (
     <div
-      className={`h-full w-full bg-surface rounded-2xl flex flex-col overflow-hidden ${
+      className={`h-full w-full bg-surface rounded-2xl flex flex-col overflow-hidden transition-all hover:scale-105 border-2 border-transparent hover:border-accent  ${
         direction === "reverse" ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
@@ -41,6 +41,7 @@ const Project = ({ data, direction }) => {
         <div className="flex flex-col gap-2">
           {data?.link?.map((item) => (
             <a
+              key={item}
               href={item}
               target="_blank"
               className="text-xs md:text-sm italic text-accent underline"
