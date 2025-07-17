@@ -7,16 +7,12 @@ import "swiper/css/pagination";
 
 // import required modules
 import { A11y, Pagination, Autoplay } from "swiper/modules";
-import useWindowWidth from "../../hooks/FindWidth";
-
 
 const Slider = ({ data }) => {
-  const width = useWindowWidth();
-
   return (
     <>
       <Swiper
-        slidesPerView={width < 768 ? 1 : 2}
+        slidesPerView={1}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -32,7 +28,7 @@ const Slider = ({ data }) => {
           <SwiperSlide key={index}>
             <figure
               key={index}
-              className="h-full w-full flex flex-col items-center justify-center p-8 text-center rounded-lg"
+              className="min-h-100 md:min-h-60 w-full flex flex-col items-center justify-center p-8 text-center bg-surface"
             >
               <blockquote className="mb-4">
                 <p className="my-4">{item?.comment}</p>

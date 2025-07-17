@@ -29,6 +29,7 @@ const Contact = () => {
 
   return (
     <section
+      id="contact"
       aria-label="contact-section"
       className="h-full w-full grid md:grid-cols-2 gap-5 py-5"
     >
@@ -44,7 +45,7 @@ const Contact = () => {
           Let's Connect <MdOutlineMessage />
         </h2>
 
-        <hr className="border border-text/50"/>
+        <hr className="border border-text/50" />
 
         {/* name  */}
         <div className="flex flex-col gap-1">
