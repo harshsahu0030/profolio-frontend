@@ -161,7 +161,7 @@ export const projectsData = [
     title: "My Porfolio",
     for: "Pratice",
     subTitle: "Harsh Sahu Porfolio",
-    description: "",
+    description: "Create my owm portfolio to present my work and services using MERN stack.",
     technologies: [
       "reactjs",
       "tailwind",
@@ -170,7 +170,7 @@ export const projectsData = [
       "expressjs",
       "mongodb",
     ],
-    image: "/project-1.webp",
+    image: "/project-4.png",
     link: [
       "https://profolio-frontend-five.vercel.app",
       "https://github.com/harshsahu0030/profolio-frontend",

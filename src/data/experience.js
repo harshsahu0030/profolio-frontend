@@ -46,7 +46,7 @@ export const experienceData = [
     role: "CSA (Meesho)",
     company: "Technotask Business Solutions Pvt Ltd",
     learn:
-      "this was my first job as a CSA (Customer Service Associate). Where I learned time management (working alternative shifts) and solve the problem of the customer by interviewing them. From that I inproved my business communation skills",
+      "This was my first job as a CSA (Customer Service Associate). Where I learned time management (working alternative shifts) and solve the problem of the customer by interviewing them. From that I inproved my business communation skills",
     skills: [
       "Communication Skills",
       "SalesForce",
@@ -54,6 +54,6 @@ export const experienceData = [
       "Time Managment",
       "Problem Solving",
     ],
-    duration: "June 2023 -Jan 2024",
+    duration: "June 2023 - Dec 2023",
   },
 ];

@@ -25,8 +25,7 @@ const Footer = () => {
                 className="flex gap-1 items-center cursor-pointer hover:scale-95 hover:text-accent transition-all font-medium"
               >
                 <a
-                  href={item?.url}
-                  target="_blank"
+                  href={item?.path}
                   rel="noreferrer"
                   className="flex gap-2 items-center capitalize"
                 >

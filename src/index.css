@@ -37,9 +37,9 @@
 
 body,
 html {
+  scroll-behavior: smooth;
   width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   background-color: var(--bg);
   color: var(--text);
 }

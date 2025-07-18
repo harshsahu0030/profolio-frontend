@@ -20,14 +20,4 @@ export const socialLinks = [
     icon: FaGithub,
     url: "",
   },
-  {
-    label: "Facebook",
-    icon: FaFacebookF,
-    url: "",
-  },
-  {
-    label: "Instagram",
-    icon: FaInstagram,
-    url: "",
-  },
 ];

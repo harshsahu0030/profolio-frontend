@@ -15,23 +15,27 @@ const Banner = () => {
             I am a <span className="text-accent">Web Developer</span>
           </h2>
           <p className="">
-            I am a full-stack developer with over 1 years of experience in
-            building scalable web applications. Skilled in both front-end and
-            back-end development, I specialize in the frontend using React and
-            other modern technologies to create seamless user experiences and
+            I am a full-stack developer with 1+ years of experience in building
+            scalable web applications. Skilled in both front-end and back-end
+            development, I specialize in the frontend using React and other
+            modern technologies to create seamless user experiences and
             efficient solutions.
           </p>
-          <button className="uppercase text-base font-semibold w-fit px-6 py-3 bg-accent rounded-full shadow-xl/20">
+          <a
+            href="https://drive.google.com/file/d/1pPsy-3qLiS-vziXVadmVfkuQm4kNsIs2/view?usp=drive_link"
+            target="_blank"
+            className="uppercase text-base font-semibold w-fit px-6 py-3 bg-accent rounded-full shadow-xl/20"
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
 
       {/* right  */}
       <div className="flex h-full flex-1 w-full items-center justify-center">
         <img
-          src="/profile-image.png"
-          alt="profile-image"
+          src="/developer.jpg"
+          alt="banner-image"
           height={400}
           width={400}
           className="object-contain rounded-4xl"
